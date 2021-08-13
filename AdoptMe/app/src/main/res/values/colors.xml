@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5a6595</color>
+    <color name="colorPrimaryDark">#2d3b67</color>
+    <color name="colorPrimaryLight">#8993c6</color>
+    <color name="colorAccent">#5a6595</color>
+
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorPostButton">#bbc4ee</color>
+    <color name="colorGrey">#6B6D73</color>
+
+
+</resources>

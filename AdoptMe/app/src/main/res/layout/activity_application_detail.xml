@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".screens.ApplicationActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt Me"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imgDog"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_dog" />
+
+
+                <TextView
+                    android:id="@+id/txtDogName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:text="Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_15sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="User Name : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_20sp" />
+
+            <TextView
+                android:id="@+id/txtUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="User Email : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_20sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="1) Number of house members"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="2) Does everybody in the hosehold agree for the adoption?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="3) Does anyone has allergies or aasthama?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="4) Who will be primary caretaker?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="5) Are you prepared to take care of the dog for 10/15 years?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="6) What if the primary care taker is ill or can’t take care of the dog, do you have alternative?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="7) Why do u want to adopt a dog"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="8) Do you have own house or rent?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="9) Do you have a yard?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="10) Where will your dog sleep?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="11) Will the dog be alone at any point of time?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="12) Do you have enough time to play with your dog, take him/her for walk and exercise?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="13) Have you ever had a pet before"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="14) Do you currently have a pet?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="15) Do you know a veterinarian you can go to?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="16) Do you plan to spay/neuter your pet?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="17) Will you be able to cover vet and other expenses?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="18) Do you have any knowledge about dog grooming for example keeping the teeth or ears clean, taking care of
+ticks, etc.?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="19) How are you planning to train the dog?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="20) How fast do you think you can make the dog comfortable with you and your house?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="21) Do you travel a lot or plan to move your house? "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="22) What will you do with the dog if you can’t keep it?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="23) What if your dog grows a disability due to accident or any medical condition?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/ans23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

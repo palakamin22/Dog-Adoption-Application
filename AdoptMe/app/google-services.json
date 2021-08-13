@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985067737797",
+    "project_id": "adoptme-d6878",
+    "storage_bucket": "adoptme-d6878.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985067737797:android:60f029fe791371a7f816ac",
+        "android_client_info": {
+          "package_name": "com.app.adoptme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985067737797-ur5fcfapa84bs6gatmc130euo9lmk15f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.adoptme",
+            "certificate_hash": "154ca22729e78596afb07ac55f1e326fca9dfbb5"
+          }
+        },
+        {
+          "client_id": "985067737797-5rikc6b5r7m1nft4c2880pvp7maj001f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX5nk3ohvH9UglPsh0su9Ig0-Cq5CakpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985067737797-5rikc6b5r7m1nft4c2880pvp7maj001f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

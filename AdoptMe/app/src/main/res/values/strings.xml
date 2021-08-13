@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AdoptMe</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">143724847676240 </string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb143724847676240</string>
+</resources>

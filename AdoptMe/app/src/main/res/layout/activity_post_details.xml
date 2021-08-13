@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt Me"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/txtApply"
+        android:layout_below="@id/layoutHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <!-- <LinearLayout
+                android:id="@+id/layoutUserDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:text="User Name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_15sp" />
+
+            </LinearLayout>-->
+
+            <ImageView
+                android:id="@+id/imgDog"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/txtBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breed"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nature"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtVaccination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vaccination"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtMedicalCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medical Condition"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason for giving up for adoption"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtSeparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separation anxiety issues"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/txtCurrentLiving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Living"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/txtApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_10dp"
+        android:text="Apply"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".screens.ApplicationActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt Me"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="1) Number of house members"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:inputType="number"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="2) Does everybody in the hosehold agree for the adoption?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg2o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg2o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="3) Does anyone has allergies or aasthama?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg3o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg3o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="4) Who will be primary caretaker?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="5) Are you prepared to take care of the dog for 10/15 years?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg5o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg5o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="6) What if the primary care taker is ill or can’t take care of the dog, do you have alternative?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg6o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg6o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="7) Why do u want to adopt a dog"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="8) Do you have own house or rent?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg8o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg8o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="9) Do you have a yard?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg9o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg9o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="10) Where will your dog sleep?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="11) Will the dog be alone at any point of time?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg11o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg11o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="12) Do you have enough time to play with your dog, take him/her for walk and exercise?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg12o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@color/colorBlack"
+                    android:text="1-2 hours"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg12o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-4 hours"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="more"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="13) Have you ever had a pet before"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg13o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg13o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="14) Do you currently have a pet?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg14o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg14o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="15) Do you know a veterinarian you can go to?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="16) Do you plan to spay/neuter your pet?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg16o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg16o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="17) Will you be able to cover vet and other expenses?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="18) Do you have any knowledge about dog grooming for example keeping the teeth or ears clean, taking care of
+ticks, etc.?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg18o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg18o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="19) How are you planning to train the dog?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="20) How fast do you think you can make the dog comfortable with you and your house?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="21) Do you travel a lot or plan to move your house? "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rg21o1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+                <RadioButton
+                    android:id="@+id/rg21o2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_12sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="22) What will you do with the dog if you can’t keep it?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_15sp"
+                android:text="23) What if your dog grows a disability due to accident or any medical condition?"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_14sp" />
+
+            <EditText
+                android:id="@+id/edt23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:background="@drawable/answer_edittext"
+                android:hint="Answer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/margin_10dp"
+                android:textSize="@dimen/font_12sp" />
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_20dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

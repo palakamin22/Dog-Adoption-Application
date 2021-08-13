@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".screens.CreatePostActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgPlaceHolder"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_dog" />
+
+                <ImageView
+                    android:id="@+id/imgDog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Breed of dog"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Age of dog"
+                android:inputType="number"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Nature of dog"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtVaccination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Vaccination status"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Location"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Name of the dog"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtMedicalCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Medical condition if any"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Reason for giving up for adoption"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtSeparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Separation anxiety issues if any"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+            <EditText
+                android:id="@+id/edtCurrentLiving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/edittext"
+                android:hint="Current living situation"
+                android:textColorHint="@color/colorGrey"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:padding="@dimen/margin_10dp" />
+
+            <Button
+                android:id="@+id/btnAddPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/button"
+                android:text="Add Post"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.adoptme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AdoptMeApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_dog"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_dog"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdoptMe"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".screens.ApplicationActivity" />
+        <activity android:name=".screens.FirebaseUI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".screens.SignInActivity" />
+        <activity android:name=".screens.SignUpActivity" />
+        <activity android:name=".screens.PostDetailsActivity" />
+        <activity android:name=".screens.HomeActivity" />
+        <activity android:name=".screens.CreatePostActivity" />
+        <activity android:name=".screens.ViewApplicationActivity"/>
+        <activity android:name=".screens.ApplicationDetailActivity" />
+    </application>
+
+</manifest>
